@@ -1,18 +1,23 @@
-# OneChipMSX for [MIST Board](https://github.com/mist-devel/mist-board/wiki)
+# OneChipMSX para [deMISTified Boards](https://github.com/DeMistified)
 
-### Features:
-- Based on [KdL's version](https://gnogni.altervista.org/)
+# Forked from MiST developer Git: (https://github.com/mist-devel/MSX_MiST)
+
+### Placas soportadas: 
+-Poseidon-ep4cgx150, Poseidon-10LC55, Neptuno DeMiSTified.
+
+### Características:
+- Basado en [KdL's version](https://gnogni.altervista.org/)
 - Normal/Turbo CPU speed
-- 2 MB/ 4MB internal RAM
-- Various extensions in Slot 1 and Slot 2
+- 2 MB/ 4MB RAM Interna
+- Varias extensiones en Slot 1 y Slot 2
 - SCART/VGA outputs
 - YPbPr output
-- SD-Card support for MSX-DOS
+- Sonido i2s
+- SD-Card Soporte directo MSX-DOS
 
-### Usage:
+### Uso:
 
-The core requires an SD-Card formatted for FAT16, and the first file in the root directory must be the MSX BIOS. However if it's inconvenient to use a separate card, then a virtual SD-Card also can be used in the form of a MSX.VHD file in the root directory of your main SD-Card. To prepare the storage, please refer to the [KdL's site](https://gnogni.altervista.org/), especially OCM-Extra Pack, which has the BIOS and the SDCreate utility. Or you can find/ask for a .vhd file in [Atari-Forum](http://www.atari-forum.com/viewtopic.php?f=115&t=30889).
+El core en caso de usar una SD exlcusiva, requiere de una tarjeta SD formateada para FAT16 y el primer archivo en el directorio raíz debe ser el BIOS de MSX. Sin embargo, si no es conveniente utilizar una tarjeta separada, también se puede utilizar una tarjeta SD virtual en forma de archivo MSX.VHD o cualquier otro que se puede cargar desde el directorio raíz o de cualquier directorio de su tarjeta SD principal. Para preparar el almacenamiento, consulte el [sitio de KdL](https://gnogni.altervista.org/), especialmente OCM-Extra Pack, que tiene el BIOS y la utilidad SDCreate. O puede buscar/solicitar un archivo .vhd en [Atari-Forum](http://www.atari-forum.com/viewtopic.php?f=115&t=30889).
 
-### Download precompiled binaries and system ROMs:
-Go to [mist-binaries](https://github.com/mist-devel/mist-binaries/tree/master/cores/msx). Copy the rbf
-file to the root of the SD card.
+### Descargue binarios precompilados y ROM del sistema:
+Go to [poseidon]([https://github.com/mist-devel/mist-binaries/tree/master/cores/msx](https://github.com/ManuFerHi/Poseidon)). Copiar el fichero .rbf a la raíz de la SD card dependiendo de la FPGA instalada en la Placa Poseidon on en las releases de este git.
