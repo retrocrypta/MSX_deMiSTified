@@ -1,9 +1,8 @@
-set_global_assignment -name VERILOG_FILE build_id.v
-set_global_assignment -name SYSTEMVERILOG_FILE ../mist/MSX.sv
-set_global_assignment -name VHDL_FILE ../mist/rtc_mist.vhd
-set_global_assignment -name QIP_FILE ../T80/T80.qip
-set_global_assignment -name QIP_FILE "../mist/mist-modules/mist.qip"
-set_global_assignment -name VERILOG_FILE "../mist/mist-modules/sd_card.v"
-set_global_assignment -name QIP_FILE ../esemsx3/emsx.qip
-set_global_assignment -name QIP_FILE ../esemsx3/src/sound/jtopl/target/quartus/jtopl.qip
-set_global_assignment -name SDC_FILE ../mist/msx_mist.sdc
+#set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) build_id.v]
+set_global_assignment -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) mist/MSX.sv]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) mist/rtc_mist.vhd]
+set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) T80/T80.qip]
+set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) "mist/mist-modules/mist.qip"]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "mist/mist-modules/sd_card.v"]
+set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) esemsx3/emsx.qip]
+set_global_assignment -name SDC_FILE [file join $::quartus(qip_path) msx_mist.sdc]
